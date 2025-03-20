@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+/* .container-form{
+  border-radius: 0.5em;
+  padding: 1em;
+  background-color: rgb(211, 211, 211);
+  position: absolute;
+  left: 50%;
+  z-index: 2;
+ 
+}
+
+.container-form form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form button{
+  cursor: pointer;
+  padding: 1em;
+  border-radius: 2em;
+  border: none;
+  color: white;
+  background-color: rgb(170, 79, 255);
+
+} */
