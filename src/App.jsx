@@ -19,6 +19,10 @@ function App(){
     
     return(
         <>
+        {cubes.length == 0 && 
+        <h1 className='absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 text-2xl font-bold'>There isn't any cubes here...</h1>    
+        }
+
             <Form aoEnviarForm={adicionarCubo} />
             <Canvas style={{
                 position:'fixed',
