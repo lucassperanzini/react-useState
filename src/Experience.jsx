@@ -17,6 +17,25 @@ useFrame((state,delta)=>{
   })
 
 
+  const removerCubo = (id) =>{
+
+    console.log("Removendo cubo com id:", id);
+
+    setCubes(
+
+      cubes.filter(cube =>{
+
+        return cube.id !== id
+
+      })  
+
+
+    )
+
+
+  }
+
+
   return (
     <>
     <OrbitControls/>
@@ -35,11 +54,10 @@ useFrame((state,delta)=>{
         <div className="p-1.5 rounded shadow-md text-white" 
          style={{ backgroundColor: `${cube.color}80` }}
         >
-          
           <h2>{cube.name}</h2>
         </div>
         </Html>
-      <Cube key={index} color={cube.color} 
+      <Cube aoRemover={removerCubo} id={cube.id} color={cube.color} 
       position={[cube.position.x,cube.position.y,cube.position.z]}/>
       
       </>
