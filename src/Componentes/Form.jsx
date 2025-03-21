@@ -13,14 +13,15 @@ export default function Form({aoEnviarForm}) {
         e.preventDefault()
         
         aoEnviarForm({
+          id: crypto.randomUUID(),
           name:name,
           color:color,
           position: position
         })
 
         setName('')
-        setColor('')
-        setPosition('')
+        setColor('#000000')
+        setPosition({ x: 0, y: 0, z: 0 })
         
     }
 
