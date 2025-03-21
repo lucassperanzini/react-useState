@@ -13,9 +13,8 @@ function App(){
         console.log(cuboCriado)
     
     }
-      
 
-
+    
     
     return(
         <>
